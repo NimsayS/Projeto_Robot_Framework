@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.4 on win32)" generated="2024-06-25T16:51:31.324839" rpa="false" schemaversion="5">
+<suite id="s1" name="SwagLabs test" source="c:\Users\yasmi\Desktop\Projeto-robot\test\SwagLabs_test.robot">
+<test id="s1-t1" name="Verificar se o login esta funcionando corretamente" line="14">
+<kw name="Dado que eu abra o navegador" owner="setup_teardown" type="SETUP">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T16:51:32.102362" level="INFO">Opening browser ' chrome' to base url 'None'.</msg>
+<arg>browser= chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T16:51:32.102362" elapsed="2.229074"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-25T16:51:34.331436" level="INFO">Opening url 'https://www.saucedemo.com'</msg>
+<arg>url=https://www.saucedemo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-25T16:51:34.331436" elapsed="1.182445"/>
+</kw>
+<status status="PASS" start="2024-06-25T16:51:32.100351" elapsed="3.413530"/>
+</kw>
+<kw name="Dado que eu abra o navegador" owner="setup_teardown">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-06-25T16:51:35.527880" level="INFO">Opening browser ' chrome' to base url 'None'.</msg>
+<arg>browser= chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-06-25T16:51:35.526881" elapsed="4.254794"/>
+</kw>
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2024-06-25T16:51:39.781675" level="INFO">Opening url 'https://www.saucedemo.com'</msg>
+<arg>url=https://www.saucedemo.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="PASS" start="2024-06-25T16:51:39.781675" elapsed="1.099968"/>
+</kw>
+<status status="PASS" start="2024-06-25T16:51:35.526881" elapsed="5.354762"/>
+</kw>
+<kw name="E coloque os dados de username e password" owner="swagLabs_resources">
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-06-25T16:51:40.893644" level="INFO">Typing text 'standard_user' into text field 'id:user-name'.</msg>
+<arg>${Campo_Username}</arg>
+<arg>${user_padrao}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T16:51:40.888647" elapsed="0.194991"/>
+</kw>
+<kw name="Input Password" owner="SeleniumLibrary">
+<msg time="2024-06-25T16:51:41.084638" level="INFO">Typing password into text field 'id:password'.</msg>
+<msg time="2024-06-25T16:51:41.124637" level="INFO">Temporally setting log level to: NONE</msg>
+<arg>${Campo_Senha}</arg>
+<arg>${senha_padrao}</arg>
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T16:51:41.083638" elapsed="0.105003"/>
+</kw>
+<status status="PASS" start="2024-06-25T16:51:40.886643" elapsed="0.301998"/>
+</kw>
+<kw name="Entao o login deve ser efetuado" owner="swagLabs_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-06-25T16:51:41.195635" level="INFO">Clicking element 'id:login-button'.</msg>
+<arg>${BOTAO_LOGIN}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-06-25T16:51:41.195635" elapsed="0.169995"/>
+</kw>
+<status status="PASS" start="2024-06-25T16:51:41.194634" elapsed="0.170996"/>
+</kw>
+<kw name="Fechar o navegador" owner="setup_teardown" type="TEARDOWN">
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-06-25T16:51:41.407628" elapsed="4.115882"/>
+</kw>
+<status status="PASS" start="2024-06-25T16:51:41.406629" elapsed="4.116881"/>
+</kw>
+<status status="PASS" start="2024-06-25T16:51:32.098349" elapsed="13.426162"/>
+</test>
+<status status="PASS" start="2024-06-25T16:51:31.330839" elapsed="14.195671"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="SwagLabs test">SwagLabs test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
