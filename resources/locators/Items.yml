@@ -1,0 +1,10 @@
+clicar_itens:
+  -  //div[@class='inventory_item_name '][contains(.,'Sauce Labs Fleece Jacket')]
+  -  //div[@class='inventory_item_name '][contains(.,'Sauce Labs Backpack')]
+  -  //div[@class='inventory_item_name '][contains(.,'Sauce Labs Bolt T-Shirt')]
+  -  //div[@class='inventory_item_name '][contains(.,'Test.allTheThings() T-Shirt (Red)')]
+  -  //div[@class='inventory_item_name '][contains(.,'Sauce Labs Bike Light')]
+  -  //div[@class='inventory_item_name '][contains(.,'Sauce Labs Onesie')]
+
+BACK_TO_PRODUCTS:                       id:back-to-products
+DESCRICAO_MAIOR:                       class:inventory_details_desc_container

@@ -1,0 +1,6 @@
+URL:            https://www.saucedemo.com
+Campo_Username: id:user-name
+Campo_Senha:    id:password
+BOTAO_LOGIN:    id:login-button
+user_padrao:    standard_user
+senha_padrao:   secret_sauce

@@ -1,5 +1,7 @@
 *** Settings ***
-Resource    ../main.robot
+Library     SeleniumLibrary
+Library     FakerLibrary   locale=pt_BR
+Resource    ../pages/swagLabs_resources.robot
 
 *** Keywords ***
 Dado que eu abra o navegador

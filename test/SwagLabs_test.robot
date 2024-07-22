@@ -1,20 +1,23 @@
 *** Settings ***
-Resource       ../resources/main.robot
 Test Setup     Dado que eu abra o navegador
+Resource       ../resources/utils/main.robot
+Resource       ../resources/pages/LoginPage.resource
+Resource       ../resources/pages/CarrinhoPage.resource
+Resource       ../resources/pages/PricesPage.resource
+Resource       ../resources/pages/ItemsPage.resource
+Resource       ../resources/pages/Redes.resource
+
+
 Test Teardown  Fechar o navegador
 
 *** Test Cases ***
 
 Verificar se os campos username e password estão visiveis
-
-    Dado que eu abra o navegador
-    Então a home page com username password devem ser visiveis
+  Então a home page com username password devem ser visiveis
 
 
 Verificar se o login esta funcionando corretamente
-
-    Dado que eu abra o navegador
-    E coloque os dados de username e password
+    Dado que coloque os dados de username e password
     Entao o login deve ser efetuado 
 
 Verificar se os itens escolhidos vao pro carrinho

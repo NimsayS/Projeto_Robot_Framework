@@ -1,0 +1,3 @@
+LOGO_TWITTER:                         //a[contains(@data-test,'social-twitter')]
+LOGO_FACEBOOK:                        //a[contains(@data-test,'social-facebook')]
+LOGO_LINKEDIN:                        //a[contains(@data-test,'social-linkedin')]
